@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SecureMe Application</title>
+    <link rel="stylesheet" href="common.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <img class="logo" id="img3" src="bluelock.png" >
+
+        <p>~ Image Steganography ~</p>
+
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="style_encode()">HIDE</button>
+          <button type="button" class="toggle-btn" onclick="style_decode()">EXTRACT</button>
+        </div>
+
+        <form id="encode" class="input-group">
+          <label for="enc-img">Select image file to use:</label>
+          <input type="file" class="input-field" id="enc-img" placeholder="Enter image file to use.." required>
+          <label for="enc-file_to_read">Select text file to use:</label>
+          <input type="file" class="input-field" id="enc-file_to_read" placeholder="Enter text file to use.." required>
+          <label for="enc-new_img_name">Enter new image file:</label>
+          <input type="text" class="input-field" id="enc-new_img_name" placeholder="Example: flowers.png" required>
+          <button type="submit" id="encodenowbutton" class="submit-btn" onclick="js_encode()">Hide Message</button>
+
+        </form>
+        <form id="decode" class="input-group">
+          <label for="dec-img">Select image file to use:</label>
+          <input type="file" class="input-field" id="dec-img" placeholder="Enter image file to use.." required>
+          <label for="dec-new_file_name">Enter new text file:</label>
+          <input type="text" class="input-field" id="dec-new_file_name" placeholder="Example: letter.txt" required>
+          <button type="submit" id="decodenowbutton" class="submit-btn" onclick="js_decode()">Extract Message</button>
+        </form>
+        <button type="button" class="backbutton" onclick="window.location.href='home.html'" >Back</button>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </body>
+</html>

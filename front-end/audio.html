@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SecureMe Application</title>
+    <link rel="stylesheet" href="common.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <img class="logo" id="img3" src="bluelock.png" >
+        <p>~ Audio Steganography ~</p>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="style_encode()">HIDE</button>
+          <button type="button" class="toggle-btn" onclick="style_decode()">EXTRACT</button>
+        </div>
+
+        <form id="encode" class="input-group">
+          <label for="enc-sound_path">Select audio file to use:</label>
+          <input type="file" class="input-field" id="enc-sound_path" placeholder="Enter audio file to use.." required>
+          <label for="enc-file_path">Select text file to use:</label>
+          <input type="file" class="input-field" id="enc-file_path" placeholder="Enter text file to use.." required>
+          <label for="enc-num_lsb">Enter no. of LSB's to use:</label>
+          <input type="text" class="input-field" id="enc-num_lsb" placeholder="Recommended: 1 or 2" required>
+          <label for="enc-output_path">Enter new audio file:</label>
+          <input type="text" class="input-field" id="enc-output_path" placeholder="Example: beetles.wav" required>
+
+          <button type="submit" id="encodenowbutton" class="submit-btn" onclick="jss_encode()">Hide Message</button>
+
+        </form>
+        <form id="decode" class="input-group">
+          <label for="dec-sound_path">Select audio file to use:</label>
+          <input type="file" class="input-field" id="dec-sound_path" placeholder="Enter audio file to use.." required>
+          <label for="dec-num_lsb">Enter no. of LSB's to use:</label>
+          <input type="text" class="input-field" id="dec-num_lsb" placeholder="No. of LSB's used to hide message" required>
+          <label for="dec-bytes_to_recover">Enter no. of bytes to extract:</label>
+          <input type="text" class="input-field" id="dec-bytes_to_recover" placeholder="Size of text file used to hide message" required>
+          <label for="dec-file_path">Enter new text file:</label>
+          <input type="text" class="input-field" id="dec-file_path" placeholder="Example: letter.txt" required>
+          <button type="submit" id="decodenowbutton" class="submit-btn" onclick="jss_decode()">Extract Message</button>
+        </form>
+        <button type="button" class="backbutton" onclick="window.location.href='home.html'" >Back</button>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </body>
+</html>
