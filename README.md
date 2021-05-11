@@ -11,6 +11,8 @@ Just clone the repository and install the necessary python libraries to run the 
 -	struct
 -	wave
 -	PIL (Python Imaging Library)
+-	time
+-	datetime
 
 
 
