@@ -7,6 +7,7 @@ from datetime import datetime
 # pixels of image and modify it
 from PIL import Image
 
+############################################## IMAGE STEGANOGRAPHY #########################################################
 # Convert encoding data into 8-bit binary
 # each character converted to 1 byte
 # formed using ASCII value of characters
