@@ -5,12 +5,12 @@ Steganography is essentially the art of concealing information. In the field of 
 Here's a desktop application that helps with image and audio steganography using the LSB Encoding technique.
 
 Just clone the repository and install the necessary python libraries to run the application.
--	eel
+-	eel (for the purpose of message passing between front-end and back-end scripts. More details here->https://pypi.org/project/Eel/)
 -	os
 -	math
 -	struct
 -	wave
 -	PIL (Python Imaging Library)
 
-Message Passing using eel (https://pypi.org/project/Eel/):
-![image](https://user-images.githubusercontent.com/44762187/117814881-748aee80-b297-11eb-95eb-b5b5fbca03d6.png)
+
+
